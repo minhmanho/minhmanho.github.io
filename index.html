@@ -13,14 +13,23 @@
 
     <link rel="shortcut icon" href="images/gt_favicon.png">
 
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b3dfd258f7.js" crossorigin="anonymous"></script>
+    <script src="js/spotlight.bundle.js"></script>
+    <script src="js/dynamics.min.js"></script>
+    <script src="js/flex-gallery.js"></script>
+    
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/flex-gallery.css" rel="stylesheet" >
 
     <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css" rel="stylesheet" >
     <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -46,22 +55,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="https://github.com/minhmanho">GitHub</a>
+                        <a href="#me">About Me</a>
                     </li>
                     <li>
-                        <a href="https://scholar.google.com/citations?user=vJxYb8gAAAAJ&hl=en">Google Scholar</a>
+                        <a href="#rein">Projects</a>
                     </li>
                     <li>
-                        <a href="https://flickr.com/sarugraphy">Flickr</a>
+                        <a href="#pub">Publications</a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/minhman_ho">Twitter</a>
+                        <a href="#ach">Achievements</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/man-minh-ho-70b13a142/">Linkedin</a>
+                        <a href="#exp">Experience</a>
                     </li> 
                     <li>
-                        <a href="https://minhmanho.github.io/files/manminhho_cv.pdf">Resume/CV</a>
+                        <a href="#ga">Gallery</a>
                     </li> 
                 </ul>
             </div>
@@ -90,82 +99,72 @@
     <!-- Main Content -->
     <div class="container">
 
-        <h1>About me </h1>
+        <h1 id="me">About Me</h1>
 		<td valign="top">
 			<br>
-            <!-- <table style="font-size: 14pt;" width="100%"> -->
             <table width="100%" style="margin-left: auto;  margin-right: auto; table-layout:fixed;">
 				<tr>
 					<td width="40%">
 						<img width="95%" src="images/small_pic.jpg">
 					</td>
 					<td>
-                        <span style="font-size: 28pt;"><b>Man M. Ho</b></span><br>
-                        <!-- [<a href="https://minhmanho.github.io/files/manminhho_cv.pdf">Resume/CV</a>] -->
+                        <span style="font-size: 3vw;"><b>Man M. Ho</b></span><br>
                         Contact: <i>manminhho.cs (at) gmail (dot) com</i>
                         <br>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://github.com/minhmanho">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://scholar.google.com/citations?user=vJxYb8gAAAAJ&hl=en">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-google fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://flickr.com/sarugraphy">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/minhman_ho">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/man-minh-ho-70b13a142/">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://minhmanho.github.io/files/manminhho_cv.pdf">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="wrapper">
+                            <a href="https://github.com/minhmanho">
+                                <div class="icon github">
+                                <div class="tooltip">Github</div>
+                                <span><i class="fab fa-github"></i></span>
+                                </div>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=vJxYb8gAAAAJ&hl=en">
+                                <div class="icon gs">
+                                    <div class="tooltip">Google Scholar</div>
+                                    <span><i class="ai ai-google-scholar ai-1x"></i></span>
+                                </div>
+                            </a>
+                            <a href="https://flickr.com/sarugraphy">
+                                <div class="icon flickr">
+                                  <div class="tooltip">Flickr</div>
+                                  <span><i class="fab fa-flickr"></i></span>
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/minhman_ho">
+                                <div class="icon twitter">
+                                <div class="tooltip">Twitter</div>
+                                <span><i class="fab fa-twitter"></i></span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/man-minh-ho-70b13a142/">
+                                <div class="icon linkedin">
+                                <div class="tooltip">Linkedin</div>
+                                <span><i class="fab fa-linkedin"></i></span>
+                                </div>
+                            </a>
+                            <a href="https://minhmanho.github.io/files/manminhho_cv.pdf">
+                                <div class="icon cvpdf">
+                                <div class="tooltip">CV/Resumé</div>
+                                <span><i class="far fa-file-pdf"></i></span>
+                                </div>
+                            </a>
+                            
 
-                        -----------------------------------------------
+
+                        </div>
                         <br>
+                        <hr>
+                        <br>
+                        <b>Short Bio:</b> <br>
                         My interests lie in Computer Vision, Deep Learning, and Photography.
-						Besides, I love taking/editing/retouching photographs. Let's check my [<a href="https://flickr.com/sarugraphy">Flickr</a>].<br>
-					</td>
+						Besides, I love taking/editing/retouching photographs.<br>
+                    </td>
 				</tr>
 			</table>
 		</td>
         <hr>
-        <h1>Research Interests</h1>
-        <span style="font-size: 12.5pt;">
+        <h1 id="rein">Research Interests</h1>
+        <span style="font-size: 1.25vw;">
             - Photography.<br>
             <span style="margin-left:2em">+ Image Style/Color Transfer.</span><br>
             <span style="margin-left:2em">+ Colorization.</span><br>
@@ -173,60 +172,65 @@
             <span style="margin-left:2em">+ Smartphone Photo Scanning.</span><br>
         </span>
 		<hr>
-		<h1>Publications </h1>
+		<h1 id="pub">Publications </h1>
         (I have published my works under the name "Minh-Man Ho" before 2020/1)<br>
-        <span style="font-size: 12.5pt;">
+        <span style="font-size: 1.25vw;">
 		<table cellspacing="15" width="100%" style="margin-left: auto;  margin-right: auto; table-layout:fixed;">
 			<tbody>
-                <tr>
-					<td width="30%">
-						<img width="95%"  src="images/sc2020.gif">
-					</td>
-					<td>
-						<span style="font-size: 15pt;">
-							<b>Semantic-driven Colorization</b><br>
-						</span>
-                        <b>Man M. Ho</b>, Lu Zhang, Alexander Raake, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a><br>
-                        To appear in ACM SIGGRAPH European Conference on Visual Media Production (CVMP), 2021. <br>
-                        [<a href="https://arxiv.org/abs/2006.07587">Paper</a>]
-                        [<a href="https://github.com/minhmanho/semantic-driven_colorization">GitHub</a>]
-                        [<a href="https://drive.google.com/file/d/1SgGorxoZHxawSsP7II23Y5ENjLXXrMIm/view?usp=sharing">Demo</a>]
-                        <br>
-                        <br>
-					</td>
-                </tr>
                 <tr>
 					<td width="30%">
 						<img width="95%"  src="images/dpscan2021.gif">
 					</td>
 					<td>
-						<span style="font-size: 15pt;">
+						<span style="font-size: 1.5vw;">
 							<b>Deep Photo Scan: Semi-supervised learning for dealing with the real-world degradation in smartphone photo scanning</b><br>
 						</span>
                         <b>Man M. Ho</b>, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a><br>
-                        In ArXiv, 2021. <br>
-                        [<a href="https://arxiv.org/abs/2102.06120">Paper</a>]
-                        [<a href="https://minhmanho.github.io/dpscan/">Webpage</a>]
-						[<a href="https://github.com/minhmanho/dpscan">GitHub</a>]
-						[<a href="https://youtu.be/-kC2T6vMlpQ">Demo</a>]
+                        To appear in Winter Conference on Applications of Computer Vision (WACV), 2022. <br>
+                        <section class="nu">
+                            <a href="https://arxiv.org/abs/2102.06120"><button class="btn btn-a">Paper</button></a>
+                            <a href="https://minhmanho.github.io/dpscan/"><button class="btn btn-b">Webpage</button></a>
+                            <a href="https://github.com/minhmanho/dpscan"><button class="btn btn-c">GitHub</button></a>
+                            <a href="https://youtu.be/-kC2T6vMlpQ"><button class="btn btn-d">Demo</button></a>
+                        </section>
                         <br>
                         <br>
 					</td>
 				</tr>
                 <tr>
 					<td width="30%">
+						<img width="95%"  src="images/sc2020.gif">
+					</td>
+					<td>
+						<span style="font-size: 1.5vw;">
+							<b>Semantic-driven Colorization</b><br>
+						</span>
+                        <b>Man M. Ho</b>, Lu Zhang, Alexander Raake, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a><br>
+                        To appear in ACM SIGGRAPH European Conference on Visual Media Production (CVMP), 2021. <br>
+                        <section class="nu">
+                            <a href="https://arxiv.org/abs/2006.07587"><button class="btn btn-a">Paper</button></a>
+                            <a href="https://github.com/minhmanho/semantic-driven_colorization"><button class="btn btn-c">GitHub</button></a>
+                            <a href="https://drive.google.com/file/d/1SgGorxoZHxawSsP7II23Y5ENjLXXrMIm/view?usp=sharing"><button class="btn btn-d">Demo</button></a>
+                        </section>
+                        <br>
+					</td>
+                </tr>
+                <tr>
+					<td width="30%">
 						<img width="95%"  src="images/rrdncnn2.jpg">
 					</td>
 					<td>
-						<span style="font-size: 15pt;">
+						<span style="font-size: 1.5vw;">
 							<b>RR-DnCNN v2.0: Enhanced Restoration-Reconstruction Deep Neural Network for Down-Sampling Based Video Coding</b><br>
 						</span>
                         <b>Man M. Ho</b>, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a>, Gang He<br>
                         In IEEE Transactions on Image Processing (TIP), 2021. <br>
-                        [<a href="https://doi.org/10.1109/TIP.2020.3046872">Paper (Open Access)</a>]
-                        [<a href="https://minhmanho.github.io/rrdncnn/">Webpage</a>]
-						[<a href="https://github.com/minhmanho/rrdncnn">GitHub</a>]
-						[<a href="https://drive.google.com/file/d/1C5z4eCTv1OFHXXteI5snCeVpySs6UBuB/view?usp=sharing">Comparison Video</a>]
+                        <section class="nu">
+                            <a href="https://doi.org/10.1109/TIP.2020.3046872"><button class="btn btn-a">Paper (Open Access)</button></a>
+                            <a href="https://minhmanho.github.io/rrdncnn/"><button class="btn btn-b">Webpage</button></a>
+                            <a href="https://github.com/minhmanho/rrdncnn"><button class="btn btn-c">GitHub</button></a>
+                            <a href="https://drive.google.com/file/d/1C5z4eCTv1OFHXXteI5snCeVpySs6UBuB/view?usp=sharing"><button class="btn btn-gray">Comparison Video</button></a>
+                        </section>
                         <br>
                         <br>
 					</td>
@@ -239,17 +243,19 @@
                         <br>
 					</td>
 					<td>
-						<span style="font-size: 15pt;">
+						<span style="font-size: 1.5vw;">
 							<b>Deep Preset: Blending and Retouching Photos with Color Style Transfer</b><br>
 						</span>
                         <b>Man M. Ho</b>, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a><br>
                         In Winter Conference on Applications of Computer Vision (WACV), 2021. <br>
-						[<a href="https://arxiv.org/abs/2007.10701">Paper</a>]
-						[<a href="https://minhmanho.github.io/deep_preset/">Webpage</a>]
-                        [<a href="https://openaccess.thecvf.com/content/WACV2021/supplemental/Ho_Deep_Preset_Blending_WACV_2021_supplemental.pdf">SupDoc</a>]
-                        [<a href="https://drive.google.com/file/d/1hF7clPr6jitjDRBCJCiMwTlYjDEknO8P/view?usp=sharing">SupVid</a>]
-						[<a href="https://github.com/minhmanho/deep_preset">GitHub</a>]
-						[<a href="https://drive.google.com/file/d/1WHt3rPXd-FiUOj_Xnb7tQnQJoXAQY9zz/view">5-min Presentation</a>]
+                        <section class="nu">
+                            <a href="https://arxiv.org/abs/2007.10701"><button class="btn btn-a">Paper</button></a>
+                            <a href="https://minhmanho.github.io/deep_preset/"><button class="btn btn-b">Webpage</button></a>
+                            <a href="https://github.com/minhmanho/deep_preset"><button class="btn btn-c">GitHub</button></a>
+                            <a href="https://openaccess.thecvf.com/content/WACV2021/supplemental/Ho_Deep_Preset_Blending_WACV_2021_supplemental.pdf"><button class="btn btn-gray">SupDoc</button></a>
+                            <a href="https://drive.google.com/file/d/1hF7clPr6jitjDRBCJCiMwTlYjDEknO8P/view?usp=sharing"><button class="btn btn-gray">SupVid</button></a>
+                            <a href="https://drive.google.com/file/d/1WHt3rPXd-FiUOj_Xnb7tQnQJoXAQY9zz/view"><button class="btn btn-gray">5-min Presentation</button></a>
+                        </section>
                         <br>
                         <br>
 					</td>
@@ -260,12 +266,14 @@
 						<img width="95%"  src="images/vizwiz2020.png">
 					</td>
 					<td>
-						<span style="font-size: 15pt;">
+						<span style="font-size: 1.5vw;">
 							<b>Japanese Coins and Banknotes Recognition for Visually Impaired People</b><br>
 						</span>
                         Huyen T. T. Bui, <b>Man M. Ho</b>, Xiao Peng, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a><br>
                         In VizWiz Workshop, 2020. <br>
-                        [<a href="https://ivc.ischool.utexas.edu/~yz9244/VizWiz_workshop/poster_pdf/Japanese_Coins_and_Banknotes_Recognition%20_for_Visually_Impaired_People.pdf">Paper</a>]
+                        <section class="nu">
+                            <a href="https://ivc.ischool.utexas.edu/~yz9244/VizWiz_workshop/poster_pdf/Japanese_Coins_and_Banknotes_Recognition%20_for_Visually_Impaired_People.pdf"><button class="btn btn-a">Paper</button></a>
+                        </section>
                         <br>
                         <br>
 					</td>
@@ -277,15 +285,18 @@
 						<img width="95%"  src="images/cvprw20-srcl.jpg">
 					</td>
 					<td>
-						<span style="font-size: 15pt;">
+						<span style="font-size: 1.5vw;">
 							<b>SR-CL-DMC: P-frame coding with Super-Resolution, Color Learning, and Deep Motion Compensation</b><br>
                         </span>
                         <b>(Top-5 performance among teams which have submitted a factsheet on P-frame Track, CLIC2020)</b> <br>
                         <b>Man M. Ho</b>, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a>, Gang He, Muchen Li, Lei Li<br>
                         In IEEE Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), 2020. <br>
-                        [<a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w7/Ho_SR-CL-DMC_P-Frame_Coding_With_Super-Resolution_Color_Learning_and_Deep_Motion_CVPRW_2020_paper.pdf">Paper</a>]
-                        [<a href="https://www.youtube.com/watch?v=nQ6pstBmGrs">Video</a>]
-                        [<a href="https://minhmanho.github.io/srcldmc/">Webpage</a>]
+                        <section class="nu">
+                            <a href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w7/Ho_SR-CL-DMC_P-Frame_Coding_With_Super-Resolution_Color_Learning_and_Deep_Motion_CVPRW_2020_paper.pdf"><button class="btn btn-a">Paper</button></a>
+                            <a href="https://minhmanho.github.io/srcldmc/"><button class="btn btn-b">Webpage</button></a>
+                            <a href="https://www.youtube.com/watch?v=nQ6pstBmGrs"><button class="btn btn-gray">1-min Presentation</button></a>
+                        </section>
+                        
                         <br>
                         <br>
 					</td>
@@ -296,16 +307,19 @@
 						<img width="95%"  src="images/rrdncnn.png">
 					</td>
 					<td>
-						<span style="font-size: 15pt;">
+						<span style="font-size: 1.5vw;">
 							<b>Down-Sampling Based Video Coding with Degradation-Aware Restoration-Reconstruction Deep Neural Network</b><br>
 						</span>
                         <b>(Oral - Best Paper Runner-up Award)</b> <br>
                         <b>Man M. Ho (Minh-Man Ho)</b>, Gang He, Zheng Wang, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a> <br>
                         In International Conference on Multimedia Modeling (MMM), 2020. <br>
-                        [<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-37731-1_9">Paper</a>]
-                        [<a href="https://minhmanho.github.io/rrdncnn/">Webpage</a>]
-                        [<a href="https://github.com/minhmanho/rrdncnn">GitHub</a>]
-                        [<a href="https://www.youtube.com/watch?v=-oNjWXAM5Hc">Demo</a>]
+                        <section class="nu">
+                            <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-37731-1_9"><button class="btn btn-a">Paper</button></a>
+                            <a href="https://minhmanho.github.io/rrdncnn/"><button class="btn btn-b">Webpage</button></a>
+                            <a href="https://github.com/minhmanho/rrdncnn"><button class="btn btn-c">GitHub</button></a>
+                            <a href="https://www.youtube.com/watch?v=-oNjWXAM5Hc"><button class="btn btn-d">Demo</button></a>
+                        </section>
+                        
                         <br>
                         <br>
 					</td>
@@ -316,17 +330,20 @@
 						<img width="95%" src="images/cvmp19.jpg">
 					</td>
                     <td>
-                        <span style="font-size: 15pt;">
+                        <span style="font-size: 1.5vw;">
 							<b>Respecting Low-level Components of Content with Skip Connections and Semantic Information in Image Style Transfer</b> <br>
 						</span>
                         <b> (Oral) </b> <br>
                         <b>Man M. Ho (Minh-Man Ho)</b>, <a href="https://www.zhou-lab.info/jinjia-zhou"> Jinjia Zhou</a>, Yibo Fan <br>
                         In ACM SIGGRAPH European Conference on Visual Media Production (CVMP), 2019. <br>
-                        [<a href="https://dl.acm.org/doi/10.1145/3359998.3369403">Paper</a>]
-                        [<a href="https://minhmanho.github.io/respecting_content_ist/">Webpage</a>]
-                        [<a href="https://github.com/minhmanho/respecting_content_ist">GitHub</a>]
-                        [<a href="https://www.youtube.com/watch?v=u0S-3AFA1Ro">Demo</a>]
-                        [<a href="https://www.youtube.com/watch?v=Q3iGoJzBTwk">Comparison Video</a>]
+                        <section class="nu">
+                            <a href="https://dl.acm.org/doi/10.1145/3359998.3369403"><button class="btn btn-a">Paper</button></a>
+                            <a href="https://minhmanho.github.io/respecting_content_ist/"><button class="btn btn-b">Webpage</button></a>
+                            <a href="https://github.com/minhmanho/respecting_content_ist"><button class="btn btn-c">GitHub</button></a>
+                            <a href="https://www.youtube.com/watch?v=u0S-3AFA1Ro"><button class="btn btn-d">Demo</button></a>
+                            <a href="https://www.youtube.com/watch?v=Q3iGoJzBTwk"><button class="btn btn-gray">Comparison Video</button></a>
+                        </section>
+                        
                         <br>
                         <br>
                     </td>
@@ -335,7 +352,7 @@
             </tbody>
             </table>
             <hr>
-			<h1>Awards and Honors</h1>
+			<h1 id="ach">Awards and Honors</h1>
 			2020/07, "Hosei University Science and Engineering Departments Education/Research Promotion Fund
             Academic Achievement Award 2020". <br>
 			2020/01, "Best Paper Runner-up Award" at MMM2020, Deajeon, Korea. <br>
@@ -343,8 +360,61 @@
             2018/08, "Squad of the month" by <a href="https://eyeq.tech/">EyeQ Tech, Vietnam.</a><br>
             2016/12, “The Five-Virtue Student” by Vietnam National University, University of Information Technology.
             <hr>
-            <h1>Professional Experience</h1>
+            <h1 id="exp">Professional Experience</h1>
             I have served as a reviewer for CVPRW 2020, BMVC 2020, WACV 2021, BMVC 2021, ICCV 2021 (assistant), and WACV 2022.
+            <hr>
+            <h1 id="ga">Gallery</h1>
+            I will be uploading more of my photos and optimizing this collection. Stay tuned.
+            <br>
+            <i>(All rights reserved)</i>
+            <br>
+            <div id="fcontainer"></div>
+
+            <script>
+                var media = {images: [], texts: [], links: [], ids: []};
+                var gallery = []
+                var settings = {
+                    "async": false,
+                    "crossDomain": true,
+                    "url": "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=4ab3f63068c6a51ba490896fe8a5760f&user_id=194195494%40N04&text=&sort=date-posted-desc&extras=url_l%2Cdescription&format=json&nojsoncallback=1",
+                    "method": "GET",
+                    "headers": {},
+                    success: function(data) {
+                        $.each( data.photos.photo, function( i, gp ) {
+                            var url_thumb = 'https://live.staticflickr.com/' + gp.server + '/' + gp.id + '_' + gp.secret + '.jpg'
+                            media.images.push(url_thumb)
+                            media.texts.push(gp.title)
+                            media.ids.push(i+1)
+                            gallery.push({
+                                title: gp.title,
+                                description: gp.description._content,
+                                src: gp.url_l,
+                            })
+                        });
+                    }
+                }
+                $.ajax(settings);
+
+                console.log(media)
+                $('#fcontainer').addFlexImages(media, false).flexGallery({
+                    margin: '0.5vmin',
+                    minHeightRatioWindow: 0.25,
+                    fadeInDuration: 2000,
+                    checkPeriod: 1000,
+                    autoAdjust: true
+                });
+
+                (function(){
+                window.showGallery = function(index){
+                    const options = {
+                        index: index,
+                        control: ["page","theme","fullscreen","zoom","play","prev","next", "close"],
+                        animation: ["fade"],
+                    };
+                    Spotlight.show(gallery, options);
+                };
+                }());
+            </script>
 
 			<br>
 			<br>
