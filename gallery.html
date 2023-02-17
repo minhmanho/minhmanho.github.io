@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Profile Page">
+    <meta name="author" content="Man M. Ho">
+
+    <title>Man M. Ho</title>
+
+    <link rel="shortcut icon" href="images/gt_favicon.png">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b3dfd258f7.js" crossorigin="anonymous"></script>
+    <script src="js/spotlight.bundle.js"></script>
+    <script src="js/dynamics.min.js"></script>
+    <script src="js/flex-gallery.js"></script>
+    
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/flex-gallery.css" rel="stylesheet" >
+
+    <!-- Custom Fonts -->
+    <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css" rel="stylesheet" >
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html#me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="index.html#rein">Projects</a>
+                    </li>
+                    <li>
+                        <a href="index.html#pub">Publications</a>
+                    </li>
+                    <li>
+                        <a href="index.html#ach">Achievements</a>
+                    </li>
+                    <li>
+                        <a href="index.html#exp">Experience</a>
+                    </li> 
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li> 
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('images/bg_head.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Man M. Ho</h1>
+                        <hr class="small">
+                        <span class="subheading">Ph.D. in Applied Informatics (Science and Engineering) | Vietnamese</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="fcontainer"></div>
+    <script>
+        var media = {images: [], texts: [], links: [], ids: []};
+        var gallery = []
+        var settings = {
+            "async": false,
+            "crossDomain": true,
+            "url": "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=07cb256cece5c454a2c703cd0bcab6ae&user_id=194195494%40N04&text=&sort=date-posted-desc&extras=url_l%2Cdescription&format=json&nojsoncallback=1",
+            "method": "GET",
+            "headers": {},
+            success: function(data) {
+                $.each( data.photos.photo, function( i, gp ) {
+                    var url_thumb = 'https://live.staticflickr.com/' + gp.server + '/' + gp.id + '_' + gp.secret + '.jpg'
+                    media.images.push(url_thumb)
+                    media.texts.push(gp.title)
+                    media.ids.push(i+1)
+                    gallery.push({
+                        title: gp.title,
+                        description: gp.description._content,
+                        src: gp.url_l,
+                    })
+                });
+            }
+        }
+        $.ajax(settings);
+
+        console.log(media)
+        $('#fcontainer').addFlexImages(media, false).flexGallery({
+            margin: '0.5vmin',
+            minHeightRatioWindow: 0.25,
+            fadeInDuration: 2000,
+            checkPeriod: 1000,
+            autoAdjust: true
+        });
+
+        (function(){
+        window.showGallery = function(index){
+            const options = {
+                index: index,
+                control: ["page","theme","fullscreen","zoom","play","prev","next", "close"],
+                animation: ["fade"],
+            };
+            Spotlight.show(gallery, options);
+        };
+        }());
+    </script>
+    <ul class="pager" style="margin: auto; width: 50%;">
+        <li class="next">
+            <a href="#">&uarr;</a>
+        </li>
+    </ul>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright text-muted">Clean Blog by <a href="https://github.com/StartBootstrap/startbootstrap-clean-blog">StartBootstrap</a>. <br>Copyright &copy; Man M. Ho 2023</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
