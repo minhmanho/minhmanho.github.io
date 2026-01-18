@@ -21,3 +21,5 @@ package-lock.json
 
 # Ignore files created by MacOS
 .DS_Store
+
+tmp/

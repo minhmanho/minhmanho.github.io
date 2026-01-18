@@ -11,35 +11,22 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Computer Science and Engineering (CSE)
+* Research Fellow at Scientific Computing and Imaging Institute (SCI), University of Utah
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Fellow** - Scientific Computing and Imaging Institute (SCI), University of Utah
+  * Salt Lake City, UT, USA
+  * Research areas: Histopathology Imaging, Deep Learning, Computer Vision
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Awards and Honors
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2020/07: "Hosei University Science and Engineering Departments Education/Research Promotion Fund Academic Achievement Award 2020"
+* 2020/01: "Best Paper Runner-up Award" at MMM2020, Daejeon, Korea
+* 2018/08: "Key Contributor" by EyeQ Tech, Vietnam
+* 2018/08: "Squad of the month" by EyeQ Tech, Vietnam
+* 2016/12: "The Five-Virtue Student" by Vietnam National University, University of Information Technology
 
 Publications
 ======
@@ -47,18 +34,12 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
+Service and Professional Activities
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+I have served as a reviewer for:
+* CVPRW 2020
+* BMVC 2020, 2021
+* WACV 2021, 2022, 2023, 2024, 2025
+* ECCV 2024
+* ICCV 2021 (assistant)
+* Neural Computing and Applications (NCAA)
