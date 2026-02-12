@@ -12,6 +12,7 @@ I am a Research Scientist/Engineer working at the intersection of generative AI 
 Beyond research, I have a strong passion for photography and enjoy capturing, editing, and retouching images, an interest that naturally complements my work in visual computing.
 
 ## News
+- **2026/01**: Promoted to Lead Applied Scientist at SpreeAI, advancing next-generation AI systems for virtual try-on technology.
 - **2025/12**: We successfully deployed a virtual try-on experience for [SPREEAI X Sergio Hudson Try-On Studio](https://sergiohudson.com/collections/spreeai-x-sergio-hudson-try-on-studio), where my team developed the core virtual try-on module powering the try-on pipeline.
 - **2025/07**: CLASS-M was accepted to Medical Image Analysis
 - **2025/07**: DuoFormer was accepted to Medical Imaging with Deep Learning (MIDL) 2025
